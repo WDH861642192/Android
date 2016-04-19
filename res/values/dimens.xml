@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    
+    <dimen name="padding">15dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_big">28dp</dimen>
+    <dimen name="main_height">48dp</dimen>
+    <dimen name="normal_height">40dp</dimen>
+    <dimen name="mine_icon_len">75dp</dimen>
+    <dimen name="mine_bigicon_len">200dp</dimen>
+    <dimen name="textsize_biggerer">24sp</dimen>
+    <dimen name="textsize_bigger">22sp</dimen>
+    <dimen name="textsize_big">20sp</dimen>
+    <dimen name="textsize_notbig">19sp</dimen> 
+    <dimen name="textsize_common">16sp</dimen>
+    <dimen name="textsize_small">14sp</dimen>
+    <dimen name="textsize_smaller">13sp</dimen>
+    <dimen name="textsize_smaller_main">12sp</dimen>
+    <dimen name="textsize_smaller_small">11sp</dimen>
+<!-- headPanel 高度 -->
+<dimen name="head_panel_height">50dp</dimen>
+<!-- headPanel 高度 -->
+    
+    <dimen name="padding_register_top">40dp</dimen>
+
+<!--  registration wizard -->
+    <dimen name="step_pager_tab_width">32dp</dimen>
+    <dimen name="step_pager_tab_height">3dp</dimen>
+    <dimen name="step_pager_tab_spacing">4dp</dimen>
+
+</resources>

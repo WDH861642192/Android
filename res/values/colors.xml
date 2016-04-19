@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_bg_gray">#E6ECF0</color>
+    <color name="textcolor_mine">#282828</color>
+    <color name="textcolor_mine_msg">#828282</color>
+    <color name="textcolor_main_radio_n">#828282</color>
+    <color name="textcolor_main_radio_f">#2B7EC7</color>
+    <color name="textcolor_content">#282828</color>
+    <color name="textcolor_msg">#939393</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="light_black">#D4D4D4</color>
+    <color name="color_gray">#666666</color>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color> 
+    <color name="color_warning_info_bg">#D6D6D6</color>
+    <color name="color_gray_click">#999999</color>
+     <color name="color_btn_click">#ee86d7ff</color>  
+    <!-- headPanel颜色 -->
+    <color name="head_panel_color">#177CCA</color><!-- 蓝色 -->
+    <color name="welcome_background_color">#4abfe6</color><!-- 亮蓝色 -->
+    <!-- headPanel颜色 -->
+<!-- list item，颜色 -->
+<color name="list_item_title_color">#003399</color><!-- 标题字段颜色，蓝色 -->
+<color name="list_item_content_color">#000000</color><!-- 内容字段颜色 ，黑色-->
+<color name="list_item_divider_color">#dddbdb</color><!-- 分割线颜色，灰色 -->
+<!-- list item，颜色 -->
+<!-- 选项卡begin-->
+	 <color name="head_tab_sel">#003399</color><!-- 蓝色 -->
+	 <color name="head_tab_no_sel">#5B5B5B</color><!-- 灰色 -->
+	 <color name="normal_gray">#99000000</color><!-- 淡灰 -->
+	 <color name="_gray">#80000000</color><!-- 淡灰 -->
+	  <color name="little_grey">#50000000</color><!-- 浅灰 -->
+	 <color name="very_little_gray">#10000000</color><!-- 浅灰 -->
+	  <color name="light_grey">#30ffffff</color><!-- 半透白 -->
+	 <color name="head_tab_no_sel_bottom_line">#ffffff</color><!-- 白色 -->
+<!-- 选项卡end-->	 
+    
+    <color name="color_main_title">#369DF9</color>
+    <color name="color_main_yellow">#fBcB17</color>
+    <color name="color_light_yellow">#10fac15d</color>
+    <color name="color_login_edit_bg">#F9FCFB</color>
+
+
+
+    <!-- for wizard -->
+    <color name="step_pager_previous_tab_color">#4433b5e5</color>
+    <color name="step_pager_selected_tab_color">#ff0099cc</color>
+    <color name="step_pager_selected_last_tab_color">#ff669900</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+    <color name="review_green">#ff669900</color>
+    <color name="text_light">#66000000</color>
+
+    <!-- list -->
+    <color name="list_row_default_bg">#FFFFFF</color>
+    <color name="list_row_pressed_bg">#BCA9F5</color>
+    <color name="list_row_selected_bg">#E6E6E6</color>
+
+</resources>
