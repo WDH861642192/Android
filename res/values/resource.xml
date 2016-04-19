@@ -6,7 +6,7 @@
         <item>空气湿度</item>
         <item>光照强度</item>
         <item>土壤温度</item>
-        <item>土壤湿度度</item>
+        <item>土壤湿度</item>
     </string-array>
 
 </resources>
