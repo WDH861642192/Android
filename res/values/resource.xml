@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-     <string-array name="spingarr">
-     <item>光照强度</item>  
-    <item>空气温度</item>  
-    <item>空气湿度</item>  
-    <item>土壤温度</item>
-    <item>土壤湿度度</item>  
+
+    <string-array name="spingarr">
+        <item>空气温度</item>
+        <item>空气湿度</item>
+        <item>光照强度</item>
+        <item>土壤温度</item>
+        <item>土壤湿度度</item>
     </string-array>
+
 </resources>

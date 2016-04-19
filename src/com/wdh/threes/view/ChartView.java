@@ -34,12 +34,13 @@ public class ChartView extends View {
 		YLabel = YLabels;
 		Data = AllData;
 		Title = strTitle;
-        invalidate();
+		invalidate();
 	}
 
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);// 重写onDraw方法
+//		Data=new String[]{"100","200","300","300","400","400","500"};
 		if (!Title.equals("")) {
 			// canvas.drawColor(Color.WHITE);//设置背景颜色
 			Paint paint = new Paint();
@@ -81,13 +82,13 @@ public class ChartView extends View {
 							YPoint + 20, paint); // 文字
 					// 数据值
 
-					if (i > 0 && YCoord(Data[i - 1]) != -999
-							&& YCoord(Data[i]) != -999) // 保证有效数据
-						canvas.drawLine(XPoint + (i - 1) * XScale,
-								YCoord(Data[i - 1]), XPoint + i * XScale,
-								YCoord(Data[i]), paint2);
-					canvas.drawCircle(XPoint + i * XScale, YCoord(Data[i]), 2,
-							paint);
+//					boolean a = i > 0 ;
+					if(i>1){
+					boolean b=YCoord(Data[i - 1]) != -999;
+					boolean c= YCoord(Data[i]) != -999;}
+//					if (i > 0 && YCoord(Data[i - 1]) != -999&& YCoord(Data[i]) != -999) // 保证有效数据
+						canvas.drawLine(XPoint + (i - 1) * XScale,YCoord(Data[i - 1]), XPoint + i * XScale,YCoord(Data[i]), paint2);
+					canvas.drawCircle(XPoint + i * XScale, YCoord(Data[i]), 2,paint);
 				} catch (Exception e) {
 				}
 			}
@@ -101,7 +102,8 @@ public class ChartView extends View {
 	}
 
 	private int YCoord(String y0) // 计算绘制时的Y坐标，无数据时返回-999
-	{
+	{ 
+//		String[] ss=y0.split(".");
 		int y;
 		try {
 			y = Integer.parseInt(y0);

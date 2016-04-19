@@ -45,13 +45,13 @@ public class MainAcitivity extends Activity {
 	EditText mEditText;
 	Spinner mSpinner;
 	String kind, device, position;
-	String[] times = {};
-	String[] datas = {};
+	String[] times = {"","","","","","",""};
+	String[] datas = {"","","","","","",""};
 	private HashMap<String, String> map = new HashMap<>();
 	private JSONObject jsonObject = new JSONObject();
 	private Context context;
-	String[] titles = { "光照强度", "空气温度", "空气湿度", "土壤温度", "土壤湿度" };
-	String[] lig = { "", "200", "400", "600", "800", "800" };
+	String[] titles = {  "空气温度", "空气湿度","光照强度", "土壤温度", "土壤湿度" };
+	String[] lig = { "", "200", "400", "600", "800", "1000" };
 	String[] hum = { "", "20", "40", "60", "80", "100" };
 	String[] tem = { "", "8", "16", "24", "32", "40" };
 	ArrayList<String[]> arr = new ArrayList<>();
@@ -72,13 +72,17 @@ public class MainAcitivity extends Activity {
 		// p.gravity=Gravity.CENTER_VERTICAL;
 		// ChartView myView = new ChartView(this);
 		context = this;
+//		String cc="31.6";
+//		String[] ccc=new String[10];
+//		ccc=cc.split(".");
 		mSpinner = (Spinner) findViewById(R.id.mySpinner);
 		mEditText = (EditText) findViewById(R.id.mimaedit);
 		mButton = (Button) findViewById(R.id.submit);
 		mButton.setFocusable(true);
-		arr.add(lig);
+		
 		arr.add(tem);
 		arr.add(hum);
+		arr.add(lig);
 		arr.add(tem);
 		arr.add(hum);
 		// myView.SetInfo(new String[] { "7-11", "7-12", "7-13", "7-14", "7-15",
@@ -103,9 +107,9 @@ public class MainAcitivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				device = mEditText.getText().toString();
-				position = String.valueOf(mSpinner.getSelectedItemPosition());
+				position = String.valueOf(mSpinner.getSelectedItemPosition()+2);
 				// if(device.equals("")||kind.equals("")){
-				map.put("data", device);
+				map.put("data", "10000001");
 				map.put("data1", position);
 				// map.put("data3", "bobair");
 				new HttpThread().start();
@@ -176,11 +180,11 @@ public class MainAcitivity extends Activity {
 					JSONArray arraydata = json.optJSONArray("data");
 					int size = arraytime.length();
 					for (int i = 0; i < size; i++) {
-						times[i] = arraytime.get(i).toString();
-						datas[i] = arraydata.get(i).toString();
+						times[i] = arraytime.get(size-1-i).toString();
+						datas[i] = arraydata.get(size-1-i).toString();
 					}
 
-					int pos = Integer.valueOf(position);
+					int pos = Integer.valueOf(position)-2;
 					if (myView == null)
 						myView = (ChartView) findViewById(R.id.myCHartView);
 
